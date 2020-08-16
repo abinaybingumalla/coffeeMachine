@@ -1,12 +1,12 @@
 # coffeeMachine
 Dunzo Assignment
 
-##Requirements:
+Requirements:
 1) N beverages parallel
 2) indicator that would show which all ingredients are running low
 3) functional integration test cases for maximum coverage
 
-##Assumptions:
+Assumptions:
 1) All beverage compositions are known
 
 We will be loading all beverage compositions and available ingredients initially from txt files.
@@ -14,7 +14,7 @@ Low Indicator is configured as 10 in ResourceManager
 Number of outlets are configured initially at the start of application
 By Changing the outlets from 2 to 4 you can observe the change in preparation as black_tea is prepared according to "Output 2"
 
-##Algorithm:
+Algorithm:
 All available ingredients are stored in concurrent map
 Easy way is to synchronize the whole map, there is a major drawback
 if tea requires ingredients 1, 2 and coffee require 3, 4 until tea is finished coffee will be blocked
